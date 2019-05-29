@@ -1,0 +1,2 @@
+Basta rodar serverDataUpdat.sh, ou rode fetchData.py | ftp.py
+A ideia é que o script rode constantemente em um servidor.

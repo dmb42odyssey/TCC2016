@@ -1,0 +1,46 @@
+<!-- Copyright 2016 Diego Martos Buoro -->
+<!--
+ This file is part of QASP.
+
+ QASP is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ QASP is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with QASP.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_update"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="Atualizar"
+        app:showAsAction="ifRoom"/>
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/configs"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:title="@string/configura_es"/>
+    <item
+        android:id="@+id/contato"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:title="@string/contato"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="3"
+        app:showAsAction="never"
+        android:title="@string/sobre"/>
+
+</menu>

@@ -1,0 +1,25 @@
+Define-se $ P$ como o conjunto de poluentes, ou seja, cada elemento desse conjunto é um tipo de poluente. Define-se  também que $ E$ é o conjunto das estações de medição que estão em operação, como por exemplo, as estações dentro do estado de São Paulo. Conforme foi mencionado anteriormente, as estações não medem necessariamente a concentração de todos os poluentes. Portanto, dado um $e \in E$, existe um $ L$ tal que $ L \subseteq P$. Sabe-se também que cada estação mede pelo menos um poluidor, então $ L \neq \varnothing $. Denota-se $ L_{e} $ como o conjunto $ L$ associado a estação $ e$. A tabela a seguir mostra a medição feita para cada estação $ e$ de $ E$ de seus respectivos poluentes de $ L$ feita as 18h em 14/06-2016:
+
+A partir da enunciação acima, é possível detalhar os conceitos do índice de qualidade de ar ($ I$)  e as categorias de qualidade. Antes de calcular esse índice, é necessário definir o intervalo fechado para cada categoria, pois o cálculo do $ I $ leva em consideração tanto  valor do limitante inferior como o superior para qualquer modelo. Os valores de $ I$ são números inteiros e positivos, então adota-se intervalos fechados inteiros.O valor de I calculado final deve ser arredondado para um inteiro. Definido os intervalos de $ I $ para cada categoria, falta designar também o intervalo de concentração ($ C$) para cada categoria e poluente. Como os valores medidos de um certo poluidor são números reais positivos, então adota-se intervalos fechados reais. Porém, diferente do que é feito  para $ I $, os valores desses limites podem ser reais.
+
+Uma vez determinado tanto o intervalo $ I$ como os intervalos de $ C$ para cada poluente em uma mesma categoria, finalmente é possível calcular o índice $ I$ dado uma concentração $ C$ de um poluente. Todas as entidades, que projetaram os critérios assim como também padrões para a qualidade do ar, fazem uso de funções lineares. A mais comum, e que é usada tanto pela Cetesb e pelo governo americano, faz uso da chamada interpolação linear. O método usa de um conjunto de informações conhecidos para gerar novos dados. Utiliza-se dois pontos conhecidos com suas respectivas coordenadas $(x_0,y_0)$ e $(x_1,y_1)$, e a reta formada entre esses dois pontos é a interpolação linear. Desse modo, dado um $ x$ entre o intervalo $ [x_0, x_1]$, é possível calcular o valor de $ y$ correspondente. Portanto, para calcular um valor de $ I$ ($ y$) dado $ C$ ($ x$) de um dos poluentes, é dado pela fórmula:
+
+$  I = I_i + (\frac{I_f - I_i}{C_f - C_i})*(C - C_i) $
+
+Onde:
+
+$ I_i$ é o menor índice dentro da categoria.
+$ I_f$ é o maior índice dentro da categoria.
+$ C_i$ é a menor concentração dentro da categoria.
+$ C_f$ é a maior concentração dentro da categoria.
+Suponha que $C = 30$ é a concentração medida para PM2,5 pela estação do Ibirapuera, como exemplo. Na tabela da Cetesb, $C$ se encontra na categoria de qualidade "moderada", e os valores de $C$ dessa categoria estão entre $[26,50]$, então $C_i = 26$ e $ C_f = 50$. Analogamente, Os valores de $ I$ variam de $ [41,80]$, logo $ I_i = 41$ e $ I_f = 80$. Portanto, com todos os valores necessários conhecidos, para uma concentração $ C = 30$ de PM2,5, o índice de qualidade do ar é $ I = 47.5$.
+
+Como agora é factível calcular o índice de qualidade do ar, é possível fazer uma generalização em função dos conjuntos $ E$ e $ L_e$ formulados previamente. Dado uma estação $ e \in E$ e um poluidor $ p \in L_e$, o índice de qualidade do ar em função de $ e$ e $ p$, $ I(e,p)$, é dado por:
+
+$  I(e,p) = I_i(e,p) + (\frac{I_f(e,p) - I_i(e,p)}{C_f(e,p) - C_i(e,p)})*(C(e,p) - C_i(e,p))$
+
+Denotando o índice geral de qualidade do ar da estação $e$ por $ I_g(e)$, esse valor pode ser calculado por:
+
+$ I_g(e) = \max_{p \in L_e} \left\{I(e,p) \right\}  $
+
+Uma importante observação é que dado um índice $ I_g(e)$, nem sempre é possível calcular a concentração $ C(e,p)$ correspondente. Isso acontece porque, como foi descrito anteriormente, o $ I_g(e)$ geral é o maior entre os poluentes medidos,então a única informação obtida é qual a maior concentração.Porém, apenas com essa informação, há situações em que não dá para saber exatamente qual é o poluidor $p$ específico.

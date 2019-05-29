@@ -1,0 +1,20 @@
+\select@language {brazil}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Polui\c c\~ao do ar na cidade de S\~ao Paulo. Fonte: \href {http://www.freeimages.com/photo/pollution-in-the-city-1445561}{freeimages}\relax }}{5}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sensor utilizado pelo grupo C\'odigoUrbano. Autor: Ana Elisa Santana, Fonte: \href {http://codigourbano.org/sensor-feito-com-tecnologia-livre-pretende-medir-poluicao-do-ar-em-regioes-criticas/}{C\'odigoUrbano}\relax }}{9}{figure.caption.14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Funcionamento do GPS. Os sat\'elites usados para a determina\c c\~ao da localiza\c c\~ao s\~ao os pontos vermelhos, e as informa\c c\~oes deles s\~ao usadas para determinar o resultado final.\relax }}{12}{figure.caption.16}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces O menor arco (em vermelho), obtido ao determinar o c\IeC {\'\i }rculo m\'aximo entre P e Q, representa a menor dist\^ancia entre esses pontos na esfera.\relax }}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ilustra\c c\~ao da Lei dos haversines na esfera unit\'aria.\relax }}{14}{figure.caption.19}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ilustra\c c\~ao do IDW no plano. Pontos A e B tem maior influ\^encia no resultado de u(x) do ponto vermelho do que os pontos E e D.\relax }}{17}{figure.caption.21}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tela inicial ao abrir o QASP.\relax }}{26}{figure.caption.25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Exemplo do resultado ao pressionar o bot\~ao de seta para baixo, com as esta\c c\~oes devidamente atualizadas.\relax }}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Tela com a o resultado do \IeC {\'\i }ndice da qualidade do ar no local do usu\'ario. \relax }}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Tela para o envio de \textit {feedbacks}\relax }}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Tela que mostra as op\c c\~oes existentes em ``Configura\c c\~oes''\relax }}{30}{figure.caption.29}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sele\c c\~ao do grupo (pefil de sa\'ude), note que \'e poss\IeC {\'\i }vel apenas uma escolha das tr\^es.\relax }}{31}{figure.caption.30}
+\addvspace {10\p@ }
+\contentsfinish 

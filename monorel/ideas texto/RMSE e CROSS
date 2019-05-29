@@ -1,0 +1,14 @@
+OMS: Organização mundial da saúde
+
+ROOT MEAN SQUARE ERROR(RMSE)
+
+sobre o p de IWD.
+
+Salvo RMSE(p0)
+Cross validation(
+Retiro 1 ponto dos n. Calculo pelo modelo, dado um p, o valor desse ponto retirado Obtenho VALOROBS. Faco isso para para os n pontos. Obtenho os o VALORBS[i])
+Calculo o RMSE(p)
+repito enquanto RMSE(p) < RMSE(p0), senão paro e devolo p.
+
+https://en.wikipedia.org/wiki/Great-circle_distance
+http://salesforce.stackexchange.com/questions/32585/what-formulae-does-the-geolocation-distance-use

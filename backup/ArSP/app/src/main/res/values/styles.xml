@@ -1,0 +1,44 @@
+<!-- Copyright 2016 Diego Martos Buoro -->
+<!--
+ This file is part of QASP.
+
+ QASP is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ QASP is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with QASP.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#3F51B5</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#303F9F</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="TextoDoResultado" parent="@android:style/TextAppearance">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#dfe4e7</item>
+    </style>
+
+    <style name="TextoemListaEstacoes" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#dfe4e7</item>
+    </style>
+
+    <style name="MargemDef" parent="@android:style/TextAppearance">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>

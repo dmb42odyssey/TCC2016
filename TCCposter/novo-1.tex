@@ -1,0 +1,167 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[portrait,final,hyperref={pdfpagelabels=false}] {beamer}
+%% -- DECLARAÇÃO DE PACOTES -- %%
+\usepackage[latin1]{inputenc}
+\usepackage{grffile}
+\mode<presentation>{\usetheme{ECOMP}}
+\usepackage[portuges, brazil]{babel}   
+\usepackage{amsmath,amsthm, amssymb, latexsym}
+%% usar sacala? scale=1.4,
+% \usepackage{geometry}
+% \geometry{paperwidth=90cm,paperheight=100cm,centering,
+% textwidth=77cm,textheight=87cm,left=3cm,top=3cm}
+
+\usepackage[orientation=portrait,size=a2,scale=1.4,debug]{beamerposter}
+% change list indention level
+% \setdefaultleftmargin{3em}{}{}{}{}{}
+%%%
+
+%\usepackage{snapshot} % will write a .dep file with all dependencies, allows for easy bundling
+\graphicspath{{./figuras/}}             % caminho das figuras (recomendável)
+\usepackage{array,booktabs,tabularx}
+\usepackage{xcolor}
+\newcolumntype{Z}{>{\centering\arraybackslash}X} % centered tabularx columns
+\newcommand{\pphantom}{\textcolor{Apricot}} % phantom introduces a vertical space in p
+%%% -- HEAD - %%%
+\title{\huge  QASP - Estimativa da qualidade do ar na \newline cidade de São Paulo}
+\author{Diego Martos Buoro, Orientadores: Prof. Dr. Alfredo Goldman vel Lejbman, Prof. Dr. Rômulo Cássio de Moraes Bertuzzi  }
+\institute[IME]{Instituto de Matemática e Estatística, Universidade de São Paulo - Trabalho de Conclusão de Curso}
+\date[Dezembro 3th, 2014]{Dezembro 03, 2014}
+%%%
+\newlength{\columnheight}
+\setlength{\columnheight}{105cm}
+%%%
+\begin{document}
+%% -- COMEÇO -- %%
+\begin{frame}
+  \begin{columns}%Inicia as Colunas
+    % ---------------------------------------------------------%
+    % Configurar a primeira coluna
+\begin{column}{.49\textwidth}
+      \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+        \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
+          \parbox[t][\columnheight]{\textwidth}{ % must be some better way to set the the height, width and textwidth simultaneously
+            % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
+            % ---------------------------------------------------------%
+            % fill each column with content
+            
+            %%INTRODUÇÃO%%%%%%%%%%%%%
+            \begin{block}{Introdução}
+ \par Desde o surgimento da Revolução Industrial, a poluição atmosférica é uma preocupação crescente, devido à atividade industrial ou pela quantidade de veículos automotores. Desse modo, definir a qualidade do ar é fundamental para esclarecer qual vai ser o impacto na saúde de um indivíduo. 
+ \par Devido às consequências na saúde, criaram-se orientações a fim de prevenir os efeitos dos poluentes no ambiente externo. Entretanto, apesar da existência de dados por parte das estações e das formas de prevenção pelas organizações de saúde, a comunicação dessas informações de maneira fácil e prática para o usuário ainda é um desafio. Além disso, o fato dos dados obtidos se restringirem apenas em volta das estações, somado a falta de monitoramento em certos locais da cidade levam a falta ou incosistência de informação, como acontece na cidade de São Paulo.
+\par \textbf{Em razão dos problemas acima, propõe-se neste trabalho, o desenvolvimento de 
+um aplicativo de forma a exibir quais as medidas preventivas, tanto para a população como a grupos específicos, a serem tomadas a partir da qualidade de ar exibida, dado a localização do usuário em São Paulo}.  
+            \end{block}
+            
+            %%%%%%%%%%OBJETIVOS%%%%%%%%%%%%%%
+            \begin{block}{Objetivos}
+           \begin{itemize}
+              \item Listagem das informações das estações na RMSP.
+              \item Cálculo da qualidade do ar local através das informações nas estações.
+              \item Feedback e customização de resultados a depender do perfil do usuário.
+              \end{itemize}
+            \end{block}
+        	 
+            %%%%%%%%%%%%POLUENTES%%%%%%%%%%%
+            \begin{block}{Poluentes}
+            \begin{figure} [H]
+\centering
+\includegraphics[scale=1.0]{poluentes}
+\caption{\label{fig:poluentes} Poluentes medidos. De todos, o Material Particulado, tanto o fino($PM_{2.5}$) como o grosso($PM_{10}$), e o $O_3$ são os que causam mais atenção dentro das organizações de saúde.}
+\end{figure} 
+%\par O $SO_2$,$CO$,$NO_2$,$O_3$ e o Mateial Particulado fino e grosso($PM_{2.5}$,$PM_{10}$) são os principais poluentes medidos. De todos, o Particulado e o $O_3$ são os que causam mais atenção dentro das organizações de saúde. Apesar do Ozônio não apresentar tantos malefícios, esse poluente merece destaque por sua alta produção na atmosfera, principalmente no verão. Por outro lado, o Particulado, especialmente o $PM_{2.5}$, é devido tanto aos efeitos agudos (imediato) e crônicos (dosagens ao longo do tempo) como a sua origem.
+            \end{block}
+            %%%%%%%%%%%%%HAVERSINE%%%%%%%%%%
+             \begin{block}{Fórmula de Haversine}
+            \begin{figure} [H]
+\centering
+\includegraphics[scale=0.5]{haversine}
+\caption{\label{fig:haversine} O menor arco (em vermelho), obtido ao determinar o círculo máximo entre P e Q, representa a menor distância entre esses pontos na esfera. A Lei dos Haversines, ilustrada na esfera da direita, é usada em caso especial para o cálculo dessa distância.}
+\end{figure} 
+            \end{block}
+            %%%%%%%%%%%%%%GPS%%%%%%%%%%%%
+            \begin{block}{Sistema de Posicionamento Global}
+            \begin{figure} [H]
+\centering
+\includegraphics[scale=0.83]{GPS}
+\caption{\label{fig:gps} Funcionamento do GPS, pontos representam os satélites.}
+\end{figure} 
+            \end{block}
+        
+          }
+          % ---------------------------------------------------------%
+          % end the column
+        \end{minipage}
+      \end{beamercolorbox}
+    \end{column}
+    % ---------------------------------------------------------%
+    % Fim da coluna 1
+
+    % ---------------------------------------------------------%
+    % Ajuste da Coluna 2
+    \begin{column}{.49\textwidth}
+      \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+        \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
+          \parbox[t][\columnheight]{\textwidth}{ 
+             %%%%%%%%%%%%%IDW%%%%%%%%
+            \begin{block}{Inverso da Potência das Distâncias}
+%  \par  O método do Inverso da Potência das Distâncias(IDW, abreviado do inglês \textit{Inverse Distance Weighting}) é um procedimento de interpolação determinístico calcula o valor de um certa propriedade (ou fenômeno) de um novo local desejado dado um conjunto de dados. 
+\par Seja $u(x): x \rightarrow \mathbb{R}$, $ x \in \mathbb{R}^n$.Se $u_i = u(x_i)$, onde $i = 1,2, ... , N$, e um conjunto $[(x_1,u_1),...,(x_N,u_N)]$, define-se:\newline
+\begin{center}$u(x) = \frac{{\sum\limits_{i = 1} ^{n}  w_i(x)u_i}}{\sum\limits_{i = 1}^{n} w_i(x)}$\end{center}
+onde:
+
+\begin{center}$w_i(x) = \frac{1}{d(x,x_i)^p}$\end{center}
+
+\noindent $d(x,x_i)$: Distância entre $x$ e $x_i$ \newline \noindent
+$p$:  Parâmetro da potência.             
+            \end{block}
+            %%%%%%%%%SCRIPT GERADOR %%%%%%%%%%
+            \begin{block}{Script Gerador}
+              \begin{figure} [H]
+\centering
+\includegraphics[scale=0.75]{sebs}
+\caption{\label{fig:sebs} Script que executa rotinas em Python e gera os dados para o aplicativo, faz uso de uma ferramenta de navegação automática(Selenium Web Driver) e de um parser de HTML(Beautiful Soup). }
+\end{figure} 
+            \end{block}
+            
+            
+            %%%%%%%%%%QASP%%%%%%%%%%%%%%
+            \begin{block}{Aplicativo QASP}
+              \begin{figure} [H]
+\centering
+\includegraphics[scale=0.75]{icone}
+\caption{\label{fig:icone} Ícone do aplicativo.}
+\end{figure} 
+              \begin{figure} [H]
+\centering
+\includegraphics[scale=1.03]{telas}
+\caption{\label{fig:telas} Exemplo do resultado ao pressionar o botão de seta para baixo, com as estações devidamente atualizadas na tela da esquerda. Cálculo do índice local pode ser feito uma vez concluída a atualização.}
+\end{figure} 
+            \end{block}
+           
+            \begin{block}{Conclusão}
+            	Há espaço para melhorar ou incluir novas funcionalidades para a interface do usuário ou nos métodos utilizados para o cálculo da qualidade do ar localmente. Algumas ideias incluem:
+            	 \begin{itemize}
+              \item Levar em consideração a diferença de altitude entre o usuário e as estações.
+              \item Implementar a funcionalidade de incluir estações para o cálculo do índice local até um certo raio.
+              \item Adicionar outras opções de filtro ao listar as estações.
+              \end{itemize}
+            	
+%%% References
+            \end{block}
+            
+            \vfill
+          }
+           
+          % ---------------------------------------------------------%
+          % end the column
+        \end{minipage}
+      \end{beamercolorbox}
+    \end{column}
+    % ---------------------------------------------------------%
+    % end the column
+  \end{columns}
+  \vskip1ex
+ \end{frame}
+%% -- FIM -- %%
+\end{document}

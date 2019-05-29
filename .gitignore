@@ -1,0 +1,5 @@
+# Arquivos ignorados #
+######################
+
+refs/*.pdf
+scriptsrel/dados.dat
