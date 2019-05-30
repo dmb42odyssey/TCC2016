@@ -1,6 +1,6 @@
 # Trabalho de Conclusão de Curso
 
-English version avaiable at the end.
+English version available at the end.
 
 ## Introdução
 Homepage de onde se encontra o desenvolvimento do trabalho da discplina MAC0499 - Trabalho de Formatura Supervionado, disciplina ofericida pelo [Departamento de Ciência da Computação(DCC)](https://www.ime.usp.br/dcc) do [Instituto de Matemática e Estatística(IME)](https://www.ime.usp.br/). Trabalho de Diego Martos Buoro, supervisionado por [Prof. Dr. Alfredo Goldman vel Lejbman](https://www.ime.usp.br/~gold/new/) e [Prof. Dr. Rômulo Cássio de Moraes Bertuzzi](http://www.eefe.usp.br/?membro/mostrar/id/149/tpc/20). 
@@ -28,6 +28,10 @@ O código fonte da parte funcional do app se encontra em Java na pasta "arsp", e
 * [Scipts externos](https://github.com/dmb42odyssey/TCC2016/tree/master/TCCpython)
 
 Scripts externos ao aplicativo que foram usados e citados na Monografia.
+
+## Status
+
+O trabalho se encontra concluído.
 
 # English
 
@@ -57,3 +61,8 @@ The source code of the functionality of the app which was written in Java is in 
 * [External scripts](https://github.com/dmb42odyssey/TCC2016/tree/master/TCCpython)
 
 External scripts which is not integrated with the app and were used and mentioned in the monograph.
+
+## Status
+
+The work project is finished.
+
