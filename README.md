@@ -38,7 +38,7 @@ O trabalho se encontra concluído.
 ## Introduction
 Homepage of where the development of the work of thye discipline "MAC0499 - Trabalho de Formatura Supervionado" (MAC0499 - Graduation supervisioned work), which is offered by the [Departamento de Ciência da Computação(Department of Computer Science, DCC)](https://www.ime.usp.br/dcc) of the [Instituto de Matemática e Estatística (Institute of Mathematics and Statistics, IME](https://www.ime.usp.br/). Work made by Diego Martos Buoro, supervised by [Prof. Dr. Alfredo Goldman vel Lejbman](https://www.ime.usp.br/~gold/new/) and [Prof. Dr. Rômulo Cássio de Moraes Bertuzzi](http://www.eefe.usp.br/?membro/mostrar/id/149/tpc/20).
 
-## Acess guide:
+## Access guide:
 
 ### Documents
 
